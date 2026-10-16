@@ -10,40 +10,66 @@
             margin: 0;
             padding: 0;
         }
-
         .main-header {
-            background-color: #0d0d46;
-            color: #fff;
-            padding: 10px 20px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            padding: 10px 20px;
+            background-color: #0c093b;
         }
-
-        .logo {
-            font-size: 1.5em;
+        .logo{
+            font-size: 24px;
             font-weight: bold;
+            background-color: #0c093b;
+            color: #f3eeee;
         }
-
+        nav {
+            margin-left: auto;
+        }
         nav ul {
-            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
             margin: 0;
             padding: 0;
-            display: flex;
         }
-
-        nav ul li {
+        nav li {
             margin-left: 20px;
+            background-color: #0c093b;
         }
-
-        nav ul li a {
-            color: #fff;
+        nav a {
+            color: #f3eeee;
             text-decoration: none;
-            transition: color 0.3s ease;
         }
-
-        nav ul li a:hover {
-            color: #ff6347; /* Tomato color on hover */
+        .section {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 24px;
+            box-sizing: border-box;
+            background-color: #1f1a68;
+        }
+        .section h1 {
+            flex: 1;
+            font-size: 2.5rem;
+        }
+        .dominando {
+            font-size: 15px;
+            position: relative;
+            z-index: 2;
+            background-color: #f3eeee;
+            border-radius: 8px;
+            width: 200px;
+            height: 120px;
+        }
+        .camada- {
+            font-size: 15px;
+            position: relative;
+            z-index: 1;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            width: 200px;
+            height: 100px;
         }
     </style>
 </head>
@@ -61,5 +87,20 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="section">
+            <h1>Fluxo de Desenvolvimento Moderno</h1>
+            <div class="article-cards">
+                <article class="dominando">
+                    <h3>Dominando Z-index</h3>
+                    <p>Aprenda o poder do posicionamento e empilhamento de elementos</p>
+                </article>
+                <article class="camada-">
+                    <h3>Camada inferior</h3>
+                    <p>Esta camada está na camada mais baixa</p>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
